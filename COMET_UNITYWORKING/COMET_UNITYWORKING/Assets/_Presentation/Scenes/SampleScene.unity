@@ -131,6 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 262345561}
+  - component: {fileID: 262345562}
   m_Layer: 0
   m_Name: Spawner (2)
   m_TagString: Untagged
@@ -153,6 +154,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &262345562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262345560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd540461f8e1ee498e8ebc341dfe5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPool: {fileID: 783313129}
+  "\u0441oinSpawnProbability": 3
 --- !u!1 &339703021
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,6 +306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 468043771}
+  - component: {fileID: 468043772}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -313,6 +329,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &468043772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468043770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd540461f8e1ee498e8ebc341dfe5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPool: {fileID: 783313129}
+  "\u0441oinSpawnProbability": 3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +404,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.848834
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -414,6 +444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 648539184}
+  - component: {fileID: 648539185}
   m_Layer: 0
   m_Name: Spawner (1)
   m_TagString: Untagged
@@ -436,6 +467,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &648539185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648539183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd540461f8e1ee498e8ebc341dfe5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPool: {fileID: 783313129}
+  "\u0441oinSpawnProbability": 3
 --- !u!1 &783313128
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,8 +510,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a58b6735827d56d489b07461d016f271, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeathWallPrefab: {fileID: 7159574168064646349, guid: efac73aa5c71a5a4597f36e121a723c2, type: 3}
-  CoinPrefab: {fileID: 7078414107233145282, guid: b9f8e0b23466f2b4db3d9d6c49701218, type: 3}
+  DeathWallPrefab: {fileID: -7766068294518096708, guid: efac73aa5c71a5a4597f36e121a723c2, type: 3}
+  CoinPrefab: {fileID: -6709391790526527557, guid: b9f8e0b23466f2b4db3d9d6c49701218, type: 3}
   poolSizeCoins: 1
   poolSizeDeathWalls: 5
 --- !u!4 &783313130
@@ -478,7 +523,7 @@ Transform:
   m_GameObject: {fileID: 783313128}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.049095, y: -1.9239299, z: 0.0051904977}
+  m_LocalPosition: {x: 15.8, y: -0.34, z: 0.0051904977}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -497,7 +542,7 @@ GameObject:
   - component: {fileID: 784524847}
   - component: {fileID: 784524846}
   - component: {fileID: 784524845}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Comet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -658,7 +703,7 @@ GameObject:
   - component: {fileID: 1733635063}
   - component: {fileID: 1733635062}
   - component: {fileID: 1733635061}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KillObjectsWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

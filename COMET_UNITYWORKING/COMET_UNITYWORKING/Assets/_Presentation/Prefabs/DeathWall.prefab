@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6832503114213771330}
   - component: {fileID: 7334002504810351658}
   - component: {fileID: 1180096550735439257}
+  - component: {fileID: -7766068294518096708}
   - component: {fileID: 2468546891944032431}
   - component: {fileID: 2999151495771327458}
   m_Layer: 0
@@ -101,6 +102,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wallRb: {fileID: 2468546891944032431}
   flyForce: 4
+--- !u!114 &-7766068294518096708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7159574168064646349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7a1284e5ea8c14c92cab7bfbc5bbf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerLayerPlayer:
+    serializedVersion: 2
+    m_Bits: 8
+  triggerLayerKillWall:
+    serializedVersion: 2
+    m_Bits: 64
+  objectPool: {fileID: 0}
 --- !u!50 &2468546891944032431
 Rigidbody2D:
   serializedVersion: 4
@@ -157,7 +177,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
