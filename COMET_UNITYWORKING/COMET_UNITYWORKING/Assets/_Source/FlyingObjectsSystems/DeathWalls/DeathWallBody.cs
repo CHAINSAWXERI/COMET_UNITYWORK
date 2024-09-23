@@ -11,6 +11,7 @@ public class DeathWallBody : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("RETURN");
         if ((triggerLayerPlayer & (1 << collision.gameObject.layer)) != 0)
         {
             SceneManager.LoadScene(0);
@@ -20,6 +21,5 @@ public class DeathWallBody : MonoBehaviour
             Debug.Log("RETURN");
             objectPool.ReturnObject(this.gameObject);
         }
-        Debug.Log("RETURN");
     }
 }

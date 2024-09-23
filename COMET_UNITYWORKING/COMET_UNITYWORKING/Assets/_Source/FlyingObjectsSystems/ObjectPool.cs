@@ -49,6 +49,7 @@ public class ObjectPool : MonoBehaviour
         DeathWallBody newObj = Instantiate(DeathWallPrefab);
         newObj.gameObject.SetActive(true);
         DeathWallPool.Add(newObj);
+        newObj.objectPool = this;
         return newObj.gameObject;
     }
 
@@ -66,6 +67,7 @@ public class ObjectPool : MonoBehaviour
         CoinBody newObj = Instantiate(CoinPrefab);
         newObj.gameObject.SetActive(true);
         CoinPool.Add(newObj);
+        newObj.objectPool = this;
         return newObj.gameObject;
     }
 

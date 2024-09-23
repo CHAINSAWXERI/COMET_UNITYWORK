@@ -19,6 +19,5 @@ public class CoinBody : MonoBehaviour
             Debug.Log("RETURN");
             objectPool.ReturnObject(this.gameObject);
         }
-        Debug.Log("RETURN");
     }
 }
