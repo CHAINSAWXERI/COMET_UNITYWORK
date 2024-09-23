@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class DeathWallBody : MonoBehaviour
 {
-    [SerializeField] public LayerMask triggerLayerPlayer;
-    [SerializeField] public LayerMask triggerLayerKillWall;
-    public ObjectPool objectPool;
+    [SerializeField] private LayerMask triggerLayerPlayer;
+    [SerializeField] private LayerMask triggerLayerKillWall;
+    public ObjectPool objectPool { private get; set; }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
